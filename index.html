@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en" oncontextmenu="return false">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Happy Journey Game
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="icon" type="image/x-icon" href="taxi_driver.png">
+</head>
+
+<body>
+    <form>
+        <div id="main">
+            <h1>Nehemiah's Happy Journey Game</h1>
+            <h2>
+                <span id="lobby">Lobby</span> <span id="cab">Cab</span>
+            </h2>
+            <br />
+            <h3>
+                <div class="lobbyBoard">Boarding Area
+                    <br />
+                    <span>Official: <input type="text" id="io1" name="leftOI" value=0 maxlength="1"></span>
+                    <br />
+                    <span>Luggage: <input type="text" id="il1" value=0 name="leftLI" maxlength="1"></span>
+                    <br />
+                    <br />
+                    <div class="lobbyBoard">Inside the Lobby</div>
+                    <br />
+                    <span>Official: <input type="text" name="leftOfficial" id="fo1" value=3 disabled></span>
+                    <br />
+                    <span>Luggage: <input type="text" name="leftLuggage" id="fl1" value=3 disabled></span>
+
+                    <span id="buttons">
+                        <input type="button" onclick="toCab(this.form)" name="movingToCab" id="c" value="Move to Cab">
+                        <input type="button" onclick="toLobby(this.form)" name="movingToLobby" id="l"
+                            value="Move to Lobby">
+                        <input type="button" id="reStart" onclick="resetting()" name="reset" value="Restart">
+                        <button id="instructions"><a href="instructions.html">Instructions</a></button>
+                    </span>
+                </div>
+
+                <div class="cabBoard">Boarding Area
+                    <br>
+                    <span>Official: <input type="text" id="io2" name="rightOI" value=0 maxlength="1"></span>
+                    <br>
+                    <span>Luggage: <input type="text" id="il2" name="rightLI" value=0 maxlength="1"></span>
+                    <br>
+                    <br>
+                    <div class="cabBoard">Inside the Cab</div>
+                    <br>
+                    <span>Official: <input type="text" name="rightOfficial" id="fo2" value=0 disabled></span>
+                    <br>
+                    <span>Luggage: <input type="text" name="rightLuggage" id="fl2" value=0 disabled></span>
+                </div>
+            </h3>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+body{
+    cursor: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxMSAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSI1Ljg5NDA0IiBjeT0iNS44NTc2NyIgcj0iNC41IiBmaWxsPSIjMUFCNUVCIiBzdHJva2U9IiMwMDE4MzUiLz48L3N2Zz4=),auto;
+}
