@@ -22,7 +22,7 @@ it. It is such a nice game, Anyone who is willing to develop their logical skill
 - JavaScript
 ## Features
 
-- Right Click Disabled
+- Text Selection/Text copying feature Disabled
 - Mouse Pointer graphic Effect launched
 - Fullscreen mode
 - Gradient effect on Heading & Body Back-ground
