@@ -59,19 +59,19 @@ function toCab(data) {
 
         document.getElementById("c").disabled = true;
         document.getElementById("l").disabled = true;
-    }else if (d != 0 && c > d) {
+    } else if (d != 0 && c > d) {
         alert("Officals got annoyed, Its an Unhappy Journey\r\nOfficials & Servant are now Helpless!\r\nGame Over!")
 
         document.getElementById("c").disabled = true;
         document.getElementById("l").disabled = true;
-    }else if(c==3 && d==3){
-        if(movesTaken==11){
+    } else if (c == 3 && d == 3) {
+        if (movesTaken == 11) {
             alert("Congratulations!\r\nYou've played the game Safely & Smartly\r\nHappy Journey & Thanks for Playing the game")
             alert("For more, You can reach out to nehemiah2015s@gmail.com")
             window.location.reload(true)
-        }else if(movesTaken>11){
+        } else if (movesTaken > 11) {
             alert("Great!\r\nYou played the game Safely & you completed it but used more number of moves\r\nBe Smart & Be Safe\r\nHappy Journey!")
-        }else if(movesTaken<11){
+        } else if (movesTaken < 11) {
             alert("Kudos to you!\r\nYou are Super Smart & Amazing\r\nYou've completed the game in most Optimised way\r\nEven, the admin is not able to find such an optimized approach\r\nCan you reach/mail at nehemiah2015s@gmail.com\r\nHe has a surprise for you, He is willing to buy a Coffee for you\r\nSee you Soon!")
         }
     }
