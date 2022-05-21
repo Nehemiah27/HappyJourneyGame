@@ -23,6 +23,7 @@ it. It is such a nice game, Anyone who is willing to develop their logical skill
 ## Features
 
 - Text Selection/Text copying feature Disabled
+- Right Click Disabled
 - Mouse Pointer graphic Effect launched
 - Fullscreen mode
 - Gradient effect on Heading & Body Back-ground
