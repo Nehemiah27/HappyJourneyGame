@@ -1,12 +1,30 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-h1{
+
+h1 {
     text-align: center;
-    color: white;
+    background: -webkit-linear-gradient(#7808f0, #06bdf5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
 }
-body{
-    cursor: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxMSAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSI1Ljg5NDA0IiBjeT0iNS44NTc2NyIgcj0iNC41IiBmaWxsPSIjMUFCNUVCIiBzdHJva2U9IiMwMDE4MzUiLz48L3N2Zz4=),auto;
+
+h3 {
+
+    margin-left: 3px;
+}
+
+body {
+    cursor: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxMSAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSI1Ljg5NDA0IiBjeT0iNS44NTc2NyIgcj0iNC41IiBmaWxsPSIjMUFCNUVCIiBzdHJva2U9IiMwMDE4MzUiLz48L3N2Zz4=), auto;
+
+    background: linear-gradient(to left, #f0ec08, #f58506);
+    color: black;
+    margin-left: 20px;
+}
+
+ul {
+    margin-left: 20px;
 }
