@@ -17,6 +17,7 @@ body {
     background: linear-gradient(to left, #f0ec08, #f58506);
     color: white;
     overflow: hidden;
+    font-family: 'Poppins', sans-serif;
 }
 
 h1 {
