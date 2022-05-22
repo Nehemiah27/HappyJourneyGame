@@ -177,11 +177,11 @@ function startOf() {
         document.getElementById("il2").disabled = true;
         document.getElementById("c").disabled = false;
         document.getElementById("l").disabled = true;
+        setTimeout(() => {
+            alert("You are out of Time, Game will be restarted automatically\r\nYou Lost the Game\r\nGame Over!")
+            window.location.reload(true)
+        }, 120000)
     }
-    setTimeout(() => {
-        alert("You are out of Time, Game will be restarted automatically\r\nYou Lost the Game\r\nGame Over!")
-        window.location.reload(true)
-    }, 120000)
     if (time < 120) {
         document.getElementById("warning").innerHTML = "You've Already Started the Game, Please Play the Game";
 
