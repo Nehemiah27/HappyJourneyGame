@@ -7,6 +7,7 @@
     user-select: none;
 }
 
+/*Dynamic heading styling with Neat UI like features  */
 h1 {
     text-align: center;
     background: -webkit-linear-gradient(#7808f0, #06bdf5);
@@ -19,6 +20,8 @@ h3 {
 
     margin-left: 3px;
 }
+
+/*Body styling with Interactive designs on the user hovering/walkthrough  */
 
 body {
     cursor: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxMSAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSI1Ljg5NDA0IiBjeT0iNS44NTc2NyIgcj0iNC41IiBmaWxsPSIjMUFCNUVCIiBzdHJva2U9IiMwMDE4MzUiLz48L3N2Zz4=), auto;
