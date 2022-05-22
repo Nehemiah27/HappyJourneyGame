@@ -96,3 +96,24 @@ a {
     font-family: 'Poppins', sans-serif;
 }
 /*end of styling of buttons  */
+
+/* Start of Styling Timer */
+#functionForTime{
+    text-align: center;
+    color: red;
+    font-family: 'Poppins', sans-serif;
+    font-size: 100px;
+}
+.start{
+    padding: 10px;
+    border-radius: 30px;
+    width: 120px;
+    font-size: 25px;
+    color: white;
+    background-color: rgb(42, 202, 42);
+}
+.start:hover{
+    font-size: 30px;
+    border-radius: 50px;
+}
+/* end of Styling Timer */
