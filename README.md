@@ -26,19 +26,19 @@ The game involves moving the entities in the Left side to the right side followi
 
 ## Features
 
-- Text Selection/Text copying feature Disabled
-- Core Logic is in the Minds of the user if user imagines the Game properly after reading instructions
-- Right Click Disabled
-- Mouse Pointer graphic Effect launched
-- Fullscreen mode
-- Gradient effect on Heading & Body Back-ground
-- Best experience on Zoom view of 100%
+- Text Selection/Text copying feature Disabled.
+- Core Logic is in the Minds of the user if user imagines the Game properly after reading instructions.
+- Right Click Disabled.
+- Mouse Pointer graphic Effect launched.
+- Fullscreen mode.
+- Gradient effect on Heading & Body Back-ground.
+- Best experience on Zoom view of 100%.
 
 
 
 
 ## Inspiration
-Inspired by the Logical solving/eye opener Logic of the Thought of the Game
+Inspired by the Logical solving/eye opener Logic of the Thought of the Game.
 
 
 
