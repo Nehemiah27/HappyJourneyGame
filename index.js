@@ -197,3 +197,4 @@ var timer = setInterval(() => {
         time--
     }
 }, 1000)
+// timer Function ended
