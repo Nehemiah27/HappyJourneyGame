@@ -11,6 +11,7 @@ html {
     font-size: 30px;
 }
 
+/*Body styling using Neat UI like features  */
 body {
     background: linear-gradient(to left, #f0ec08, #f58506);
     color: white;
@@ -20,6 +21,7 @@ body {
     
 }
 
+/*Dynamic styling of Title of the game  */
 h1 {
     text-align: center;
     background: -webkit-linear-gradient(#7808f0, #06bdf5);
@@ -43,7 +45,7 @@ h1 {
     color: black;
 }
 
-
+/* Inputs/Boxes for display of stats are styled here */
 input[type=text] {
     width: 30px;
     height: 40px;
@@ -57,9 +59,13 @@ input[type=text] {
     padding-left: 5%;
 }
 
+
+/*  Styling of buttons started*/
 #buttons {
     padding-left: 30px;
 }
+
+
 
 #c,
 #l,
@@ -89,3 +95,4 @@ a {
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
 }
+/*end of styling of buttons  */
