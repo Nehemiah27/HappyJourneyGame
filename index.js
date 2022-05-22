@@ -18,15 +18,35 @@ function toCab(data) {
 
     //     General check on the user inputs at Lobby side
     if (userPickedOfficialsAtLobby != 0 && userPickedOfficialsAtLobby != 1 && userPickedOfficialsAtLobby != 2) {
-        alert("Please make the choice as per the Game rules")
+        document.getElementById("warning").innerHTML = "Please make the choice as per the Game rules";
+
+        setTimeout(() => {
+            document.getElementById("warning").innerHTML = "";
+        }, 5000)
     } else if (userPickedLuggageAtLobby != 0 && userPickedLuggageAtLobby != 1 && userPickedLuggageAtLobby != 2) {
-        alert("Please make the choice as per the Game rules")
+        document.getElementById("warning").innerHTML = "Please make the choice as per the Game rules";
+
+        setTimeout(() => {
+            document.getElementById("warning").innerHTML = "";
+        }, 5000)
     } else if (userPickedLuggageAtLobby + userPickedOfficialsAtLobby == 0) {
-        alert("Please select atleast One entity from the Lobby")
+        document.getElementById("warning").innerHTML = "Please select atleast One entity from the Lobby";
+
+        setTimeout(() => {
+            document.getElementById("warning").innerHTML = "";
+        }, 5000)
     } else if (userPickedLuggageAtLobby + userPickedOfficialsAtLobby > 2) {
-        alert("Only two entities are allowed for a single movement to Cab")
+        document.getElementById("warning").innerHTML = "Only two entities are allowed for a single movement to Cab";
+
+        setTimeout(() => {
+            document.getElementById("warning").innerHTML = "";
+        }, 5000)
     } else if (userPickedLuggageAtLobby > inLobbyLuggage || userPickedOfficialsAtLobby > inLobbyOfficials) {
-        alert("Please check your Selection\r\nYour Selection is out of available choices & Rules")
+        document.getElementById("warning").innerHTML = "Please check your Selection\r\nYour Selection is out of available choices & Rules";
+
+        setTimeout(() => {
+            document.getElementById("warning").innerHTML = "";
+        }, 5000)
     }
     //     actual action upon correct user inputs
     else if (data.movingToCab.onclick) {
@@ -102,15 +122,38 @@ function toLobby(data) {
 
     //     General check on the user inputs
     if (userPickedOfficialsAtCab != 0 && userPickedOfficialsAtCab != 1 && userPickedOfficialsAtCab != 2) {
-        alert("Please make the choice as per the Game rules")
+        document.getElementById("warning").innerHTML = "Please make the choice as per the Game rules";
+
+        setTimeout(() => {
+            document.getElementById("warning").innerHTML = "";
+        }, 5000)
     } else if (userPickedLuggageAtCab != 0 && userPickedLuggageAtCab != 1 && userPickedLuggageAtCab != 2) {
-        alert("Please make the choice as per the Game rules")
+        
+        document.getElementById("warning").innerHTML = "Please make the choice as per the Game rules";
+
+        setTimeout(() => {
+            document.getElementById("warning").innerHTML = "";
+        }, 5000)
     } else if (userPickedLuggageAtCab + userPickedOfficialsAtCab == 0) {
-        alert("Please select atleast One entity from the Cab")
+        document.getElementById("warning").innerHTML = "Please select atleast One entity from the Cab";
+
+        setTimeout(() => {
+            document.getElementById("warning").innerHTML = "";
+        }, 5000)
+
     } else if (userPickedLuggageAtCab + userPickedOfficialsAtCab > 2) {
-        alert("Only two entities are allowed for a single movement to Lobby")
+        document.getElementById("warning").innerHTML = "Only two entities are allowed for a single movement to Lobby";
+
+        setTimeout(() => {
+            document.getElementById("warning").innerHTML = "";
+        }, 5000)
+
     } else if (userPickedLuggageAtCab > inCabLuggage || userPickedOfficialsAtCab > inCabOfficials) {
-        alert("Please check your Selection\r\nYour Selection is out of available choices & Rules")
+        document.getElementById("warning").innerHTML = "Please check your Selection\r\nYour Selection is out of available choices & Rules";
+
+        setTimeout(() => {
+            document.getElementById("warning").innerHTML = "";
+        }, 5000)
     }
 
     //     actual action upon correct user inputs
@@ -177,10 +220,11 @@ function startOf() {
         document.getElementById("il2").disabled = true;
         document.getElementById("c").disabled = false;
         document.getElementById("l").disabled = true;
-        setTimeout(() => {
-            alert("You are out of Time, Game will be restarted automatically\r\nYou Lost the Game\r\nGame Over!")
-            window.location.reload(true)
-        }, 120000)
+        
+    setTimeout(() => {
+        alert("You are out of Time, Game will be restarted automatically\r\nYou Lost the Game\r\nGame Over!")
+        window.location.reload(true)
+    }, 120000)
     }
     if (time < 120) {
         document.getElementById("warning").innerHTML = "You've Already Started the Game, Please Play the Game";
