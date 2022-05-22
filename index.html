@@ -16,17 +16,20 @@
 <body>
     <form>
         <div id="main">
+            <!--Game Title              -->
             <h1>Nehemiah's Happy Journey Game</h1>
             <h2>
+                <!--Side Headings for Home & Destination                  -->
                 <span id="lobby">Lobby</span> <span id="cab">Cab</span>
             </h2>
             <br />
             <h3>
+                <!--Start of Left side(Home Side)                  -->
                 <div class="lobbyBoard">Boarding Area
                     <br />
-                    <span>Official: <input type="text" id="io1" name="leftOI" value=0 maxlength="1"></span>
+                    <span>Official: <input type="text" id="io1" name="leftOI" value=0 maxlength="1" disabled></span>
                     <br />
-                    <span>Luggage: <input type="text" id="il1" value=0 name="leftLI" maxlength="1"></span>
+                    <span>Luggage: <input type="text" id="il1" value=0 name="leftLI" maxlength="1" disabled></span>
                     <br />
                     <br />
                     <div class="lobbyBoard">Inside the Lobby</div>
@@ -36,13 +39,18 @@
                     <span>Luggage: <input type="text" name="leftLuggage" id="fl1" value=3 disabled></span>
 
                 </div>
-
+                <!--End of Home Side/Left Side                  -->
+                <!--Start of Operators/Action tools          -->
                 <span id="buttons">
-                    <input type="button" onclick="toCab(this.form)" name="movingToCab" id="c" value="Move to Cab">
-                    <input type="button" onclick="toLobby(this.form)" name="movingToLobby" id="l" value="Move to Lobby">
+                    <input type="button" onclick="toCab(this.form)" name="movingToCab" id="c" value="Move to Cab"
+                        disabled>
+                    <input type="button" onclick="toLobby(this.form)" name="movingToLobby" id="l" value="Move to Lobby"
+                        disabled>
                     <input type="button" id="reStart" onclick="resetting()" name="reset" value="Restart">
                     <button id="instructions"><a href="instructions.html" target="_blank">Instructions</a></button>
                 </span>
+                <!-- End of Operators/Action tools                 -->
+                <!--Start of Destination side/right side                  -->
                 <div class="cabBoard">Boarding Area
                     <br>
                     <span>Official: <input type="text" id="io2" name="rightOI" value=0 maxlength="1" disabled></span>
@@ -56,9 +64,22 @@
                     <br>
                     <span>Luggage: <input type="text" name="rightLuggage" id="fl2" value=0 disabled></span>
                 </div>
+                <!--End of destination/right side                  -->
+
+
             </h3>
         </div>
+
     </form>
+    <div id="functionForTime">
+
+        <span class="minutes">02</span><span> :</span>
+        <span class="seconds">00</span><br>
+        <button class="start" onclick="startOf()">Start</button>
+
+    </div>
+
+    <span id="warning"></span>
 </body>
 
 </html>
