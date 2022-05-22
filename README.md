@@ -36,6 +36,12 @@ The game involves moving the entities in the Left side to the right side followi
 
 
 
+
+## Inspiration
+Inspired by the Logical solving/eye opener Logic of the Thought of the Game
+
+
+
 ## Authors talk
 It is highly recommended to read the Instructions of playing the Game before directly entering to play.
 
