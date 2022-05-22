@@ -36,13 +36,13 @@ function toCab(data) {
             document.getElementById("warning").innerHTML = "";
         }, 5000)
     } else if (userPickedLuggageAtLobby + userPickedOfficialsAtLobby > 2) {
-        document.getElementById("warning").innerHTML = "Only two entities are allowed for a single movement to Cab";
+        document.getElementById("warning").innerHTML = "Only one/two entities are allowed for a single movement";
 
         setTimeout(() => {
             document.getElementById("warning").innerHTML = "";
         }, 5000)
     } else if (userPickedLuggageAtLobby > inLobbyLuggage || userPickedOfficialsAtLobby > inLobbyOfficials) {
-        document.getElementById("warning").innerHTML = "Please check your Selection\r\nYour Selection is out of available choices & Rules";
+        document.getElementById("warning").innerHTML = "Your Selection is out of available choices & Rules";
 
         setTimeout(() => {
             document.getElementById("warning").innerHTML = "";
@@ -142,14 +142,14 @@ function toLobby(data) {
         }, 5000)
 
     } else if (userPickedLuggageAtCab + userPickedOfficialsAtCab > 2) {
-        document.getElementById("warning").innerHTML = "Only two entities are allowed for a single movement to Lobby";
+        document.getElementById("warning").innerHTML = "Only one/two entities are allowed for a single movement";
 
         setTimeout(() => {
             document.getElementById("warning").innerHTML = "";
         }, 5000)
 
     } else if (userPickedLuggageAtCab > inCabLuggage || userPickedOfficialsAtCab > inCabOfficials) {
-        document.getElementById("warning").innerHTML = "Please check your Selection\r\nYour Selection is out of available choices & Rules";
+        document.getElementById("warning").innerHTML = "Your Selection is out of available choices & Rules";
 
         setTimeout(() => {
             document.getElementById("warning").innerHTML = "";
