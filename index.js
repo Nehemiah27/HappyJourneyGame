@@ -65,11 +65,13 @@ function toCab(data) {
     if (b != 0 && a > b) {
         alert("Officals got annoyed, Its an Unhappy Journey\r\nOfficials & Servant are now Helpless!\r\nGame Over!")
 
+        window.location.reload(true)
         document.getElementById("c").disabled = true;
         document.getElementById("l").disabled = true;
     } else if (d != 0 && c > d) {
         alert("Officals got annoyed, Its an Unhappy Journey\r\nOfficials & Servant are now Helpless!\r\nGame Over!")
 
+        window.location.reload(true)
         document.getElementById("c").disabled = true;
         document.getElementById("l").disabled = true;
     } else if (c == 3 && d == 3) {
@@ -147,12 +149,14 @@ function toLobby(data) {
     if (b != 0 && a > b) {
         alert("Officals got annoyed, Its an Unhappy Journey\r\nOfficials & Servant are now Helpless!\r\nGame Over!")
 
+        window.location.reload(true)
         document.getElementById("c").disabled = true;
         document.getElementById("l").disabled = true;
     }
     if (d != 0 && c > d) {
         alert("Officals got annoyed, Its an Unhappy Journey\r\nOfficials & Servant are now Helpless!\r\nGame Over!")
 
+        window.location.reload(true)
         document.getElementById("c").disabled = true;
         document.getElementById("l").disabled = true;
     }
