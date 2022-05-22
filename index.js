@@ -36,7 +36,7 @@ function toCab(data) {
             document.getElementById("warning").innerHTML = "";
         }, 5000)
     } else if (userPickedLuggageAtLobby + userPickedOfficialsAtLobby > 2) {
-        document.getElementById("warning").innerHTML = "Only one/two entities are allowed for a single movement";
+        document.getElementById("warning").innerHTML = "Maximum limit for a Single movement is two";
 
         setTimeout(() => {
             document.getElementById("warning").innerHTML = "";
@@ -142,7 +142,7 @@ function toLobby(data) {
         }, 5000)
 
     } else if (userPickedLuggageAtCab + userPickedOfficialsAtCab > 2) {
-        document.getElementById("warning").innerHTML = "Only one/two entities are allowed for a single movement";
+        document.getElementById("warning").innerHTML = "Maximum limit for a Single movement is two";
 
         setTimeout(() => {
             document.getElementById("warning").innerHTML = "";
