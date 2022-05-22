@@ -2,10 +2,10 @@
 
 # Nehemiah's Happy Journey Game
 
-A brief description of what this project does and who it's for
 
 The Project is all about a Logical Game, It is really an opener Logic for those who will be playing
 it. It is such a nice game, Anyone who is willing to develop their logical skills can play this.
+The game involves moving the entities in the Left side to the right side following the constraints laid.
 
 
 
@@ -37,15 +37,15 @@ it. It is such a nice game, Anyone who is willing to develop their logical skill
 
 
 ## Authors talk
-It is highly recommended to read the Instructions of playing the Game before directly entering to play
+It is highly recommended to read the Instructions of playing the Game before directly entering to play.
 
-The Instructions page link can be available in the Home page
+The Instructions page link can be available in the Home page.
 
-The whole game is designed based on the Instructions 
+The whole game is designed based on the Instructions.
 
-The version of this game will also be updated in the Future by adding certain visual & audio effects
+The version of this game will also be updated in the Future by adding certain visual & audio effects.
 
-100% Zoom mode is entertained for this game to play to grab the maximun Playing experience
+100% Zoom mode is entertained for this game(in Desktops) to play to grab the maximun Playing experience.
 
 
 
