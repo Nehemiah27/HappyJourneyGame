@@ -15,19 +15,25 @@ it. It is such a nice game, Anyone who is willing to develop their logical skill
 [@Nehemiah27](https://github.com/Nehemiah27)
 
 
+
 ## Tech Stack
 
 - HTML
 - CSS
 - JavaScript
+
+
+
 ## Features
 
 - Text Selection/Text copying feature Disabled
+- Core Logic is in the Minds of the user if user imagines the Game properly after reading instructions
 - Right Click Disabled
 - Mouse Pointer graphic Effect launched
 - Fullscreen mode
 - Gradient effect on Heading & Body Back-ground
 - Best experience on Zoom view of 100%
+
 
 
 ## Authors talk
@@ -43,9 +49,12 @@ The version of this game will also be updated in the Future by adding certain vi
 
 
 
+
 ## Feedback
 
 If you have any feedback, please reach out to us at nehemiah2015s@gmail.com
+
+
 
 
 ## Contributing
