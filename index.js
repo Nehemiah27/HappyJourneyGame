@@ -19,33 +19,43 @@ function toCab(data) {
     //     General check on the user inputs at Lobby side
     if (userPickedOfficialsAtLobby != 0 && userPickedOfficialsAtLobby != 1 && userPickedOfficialsAtLobby != 2) {
         document.getElementById("warning").innerHTML = "Please make the choice as per the Game rules";
+        document.getElementById("suggestions").innerHTML = "Enter 0 for Blank field, if any";
 
         setTimeout(() => {
             document.getElementById("warning").innerHTML = "";
+            document.getElementById("suggestions").innerHTML = "";
         }, 5000)
     } else if (userPickedLuggageAtLobby != 0 && userPickedLuggageAtLobby != 1 && userPickedLuggageAtLobby != 2) {
         document.getElementById("warning").innerHTML = "Please make the choice as per the Game rules";
+        document.getElementById("suggestions").innerHTML = "Enter 0 for Blank field, if any";
 
         setTimeout(() => {
             document.getElementById("warning").innerHTML = "";
+            document.getElementById("suggestions").innerHTML = "";
         }, 5000)
     } else if (userPickedLuggageAtLobby + userPickedOfficialsAtLobby == 0) {
         document.getElementById("warning").innerHTML = "Please select atleast One entity from the Lobby";
+        document.getElementById("suggestions").innerHTML = "Enter 0 for Blank field, if any";
 
         setTimeout(() => {
             document.getElementById("warning").innerHTML = "";
+            document.getElementById("suggestions").innerHTML = "";
         }, 5000)
     } else if (userPickedLuggageAtLobby + userPickedOfficialsAtLobby > 2) {
         document.getElementById("warning").innerHTML = "Maximum limit for a Single movement is two";
+        document.getElementById("suggestions").innerHTML = "Enter 0 for Blank field, if any";
 
         setTimeout(() => {
             document.getElementById("warning").innerHTML = "";
+            document.getElementById("suggestions").innerHTML = "";
         }, 5000)
     } else if (userPickedLuggageAtLobby > inLobbyLuggage || userPickedOfficialsAtLobby > inLobbyOfficials) {
         document.getElementById("warning").innerHTML = "Your Selection is out of available choices & Rules";
+        document.getElementById("suggestions").innerHTML = "Enter 0 for Blank field, if any";
 
         setTimeout(() => {
             document.getElementById("warning").innerHTML = "";
+            document.getElementById("suggestions").innerHTML = "";
         }, 5000)
     }
     //     actual action upon correct user inputs
@@ -70,10 +80,10 @@ function toCab(data) {
         movesTaken++;
 
         //         clearing the user inputs after the action performed
-        data.leftOI.value = 0;
-        data.leftLI.value = 0;
-        data.rightOI.value = 0;
-        data.rightLI.value = 0;
+        data.leftOI.value = "";
+        data.leftLI.value = "";
+        data.rightOI.value = "";
+        data.rightLI.value = "";
 
     }
     var a = data.leftOfficial.value;
@@ -121,38 +131,50 @@ function toLobby(data) {
     var userPickedLuggageAtCab = parseInt(document.getElementById("il2").value);
 
     //     General check on the user inputs
-    if (userPickedOfficialsAtCab != 0 && userPickedOfficialsAtCab != 1 && userPickedOfficialsAtCab != 2) {
+    if (userPickedOfficialsAtCab != 0 && userPickedOfficialsAtCab != 1 && userPickedOfficialsAtCab != 2 ) {
         document.getElementById("warning").innerHTML = "Please make the choice as per the Game rules";
+        document.getElementById("suggestions").innerHTML = "Enter 0 for Blank field, if any";
 
         setTimeout(() => {
             document.getElementById("warning").innerHTML = "";
+            document.getElementById("suggestions").innerHTML = "";
         }, 5000)
     } else if (userPickedLuggageAtCab != 0 && userPickedLuggageAtCab != 1 && userPickedLuggageAtCab != 2) {
         
         document.getElementById("warning").innerHTML = "Please make the choice as per the Game rules";
+        document.getElementById("suggestions").innerHTML = "Enter 0 for Blank field, if any";
+
 
         setTimeout(() => {
             document.getElementById("warning").innerHTML = "";
+            document.getElementById("suggestions").innerHTML = "";
         }, 5000)
     } else if (userPickedLuggageAtCab + userPickedOfficialsAtCab == 0) {
         document.getElementById("warning").innerHTML = "Please select atleast One entity from the Cab";
+        document.getElementById("suggestions").innerHTML = "Enter 0 for Blank field, if any";
 
         setTimeout(() => {
             document.getElementById("warning").innerHTML = "";
+            document.getElementById("suggestions").innerHTML = "";
         }, 5000)
 
     } else if (userPickedLuggageAtCab + userPickedOfficialsAtCab > 2) {
         document.getElementById("warning").innerHTML = "Maximum limit for a Single movement is two";
+        document.getElementById("suggestions").innerHTML = "Enter 0 for Blank field, if any";
+
 
         setTimeout(() => {
             document.getElementById("warning").innerHTML = "";
+            document.getElementById("suggestions").innerHTML = "";
         }, 5000)
 
     } else if (userPickedLuggageAtCab > inCabLuggage || userPickedOfficialsAtCab > inCabOfficials) {
         document.getElementById("warning").innerHTML = "Your Selection is out of available choices & Rules";
+        document.getElementById("suggestions").innerHTML = "Enter 0 for Blank field, if any";
 
         setTimeout(() => {
             document.getElementById("warning").innerHTML = "";
+            document.getElementById("suggestions").innerHTML = "";
         }, 5000)
     }
 
@@ -177,10 +199,10 @@ function toLobby(data) {
         movesTaken++;
         //         clearing the user inputs after the action performed
 
-        data.rightOI.value = 0;
-        data.rightLI.value = 0;
-        data.leftOI.value = 0;
-        data.leftLI.value = 0;
+        data.rightOI.value = "";
+        data.rightLI.value = "";
+        data.leftOI.value = "";
+        data.leftLI.value = "";
 
     }
     var a = data.leftOfficial.value;
