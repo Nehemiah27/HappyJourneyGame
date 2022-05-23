@@ -118,3 +118,9 @@ a {
     border-radius: 50px;
 }
 /* end of Styling Timer */
+
+#suggestions {
+    margin-left: 85px;
+    padding-left: 85px;
+    color: red;
+}
