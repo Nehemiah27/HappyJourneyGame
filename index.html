@@ -18,9 +18,17 @@
         <div id="main">
             <!--Game Title              -->
             <h1>Nehemiah's Happy Journey Game</h1>
+
+            <div id="buttons">
+                <input type="button" onclick="toCab(this.form)" name="movingToCab" id="c" value="Move to Cab" disabled>
+                <input type="button" onclick="toLobby(this.form)" name="movingToLobby" id="l" value="Move to Lobby"
+                    disabled>
+                <input type="button" id="reStart" onclick="resetting()" name="reset" value="Restart">
+                <button id="instructions"><a href="instructions.html" target="_blank">Instructions</a></button>
+            </div>
             <h2>
                 <!--Side Headings for Home & Destination                  -->
-                <span id="lobby">Lobby</span> 
+                <span id="lobby">Lobby</span>
                 <span id="suggestions"></span><span id="cab">Cab</span>
             </h2>
             <br />
@@ -42,14 +50,6 @@
                 </div>
                 <!--End of Home Side/Left Side                  -->
                 <!--Start of Operators/Action tools          -->
-                <span id="buttons">
-                    <input type="button" onclick="toCab(this.form)" name="movingToCab" id="c" value="Move to Cab"
-                        disabled>
-                    <input type="button" onclick="toLobby(this.form)" name="movingToLobby" id="l" value="Move to Lobby"
-                        disabled>
-                    <input type="button" id="reStart" onclick="resetting()" name="reset" value="Restart">
-                    <button id="instructions"><a href="instructions.html" target="_blank">Instructions</a></button>
-                </span>
                 <!-- End of Operators/Action tools                 -->
                 <!--Start of Destination side/right side                  -->
                 <div class="cabBoard">Boarding Area
@@ -72,17 +72,17 @@
         </div>
 
     </form>
-    
+
     <div id="functionForTime">
 
         <span class="minutes">02</span><span> :</span>
         <span class="seconds">00</span><br>
-        
+        <p id="tracker">Moves Taken by You: <span id="counting">0</span></p>
         <button class="start" onclick="startOf()">Start</button>
 
     </div>
 
-    <span id="warning"></span>
+    <div id="warning"></div>
 </body>
 
 </html>
