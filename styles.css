@@ -18,7 +18,7 @@ body {
     overflow: hidden;
     font-family: 'Poppins', sans-serif;
     cursor: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxMSAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSI1Ljg5NDA0IiBjeT0iNS44NTc2NyIgcj0iNC41IiBmaWxsPSIjMUFCNUVCIiBzdHJva2U9IiMwMDE4MzUiLz48L3N2Zz4=), auto;
-    
+
 }
 
 /*Dynamic styling of Title of the game  */
@@ -62,8 +62,7 @@ input[type=text] {
 
 /*  Styling of buttons started*/
 #buttons {
-    padding-left: 30px;
-    margin-left: 5px;
+    text-align: center;
 }
 
 
@@ -96,16 +95,18 @@ a {
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
 }
+
 /*end of styling of buttons  */
 
 /* Start of Styling Timer */
-#functionForTime{
+#functionForTime {
     text-align: center;
     color: red;
     font-family: 'Poppins', sans-serif;
     font-size: 100px;
 }
-.start{
+
+.start {
     padding: 10px;
     border-radius: 30px;
     width: 120px;
@@ -113,14 +114,27 @@ a {
     color: white;
     background-color: rgb(42, 202, 42);
 }
-.start:hover{
+
+.start:hover {
     font-size: 30px;
     border-radius: 50px;
+    cursor: pointer;
 }
+
 /* end of Styling Timer */
 
 #suggestions {
     margin-left: 85px;
     padding-left: 85px;
     color: red;
+}
+
+#tracker {
+    font-size: 30px;
+    color: green;
+}
+
+#warning {
+    text-align: center;
+    justify-self: center;
 }
