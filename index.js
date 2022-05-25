@@ -1,6 +1,11 @@
 // Function of restart on button click
 function resetting() {
     alert("All your selections will be reset")
+    if (time == 120) {
+        alert("You've not even started the Game but restarted\r\nAny way, Please play again")
+    } else {
+        alert("Moves Taken by you are: " + movesTaken)
+    }
     window.location.reload(true)
 }
 // movesTaken variable used to comment the Player performance upon his successful close of game
@@ -78,6 +83,13 @@ function toCab(data) {
         document.getElementById("c").disabled = true;
         document.getElementById("l").disabled = false;
         movesTaken++;
+        document.getElementById("counting").innerHTML = movesTaken;
+
+
+        if (document.getElementById("c").disabled) {
+            document.getElementById("l").style.display = 'inline';
+            document.getElementById("c").style.display = 'none';
+        }
 
         //         clearing the user inputs after the action performed
         data.leftOI.value = "";
@@ -93,26 +105,28 @@ function toCab(data) {
 
     //     a check on the balance of rules of the game
     if (b != 0 && a > b) {
-        alert("Officals got annoyed, Its an Unhappy Journey\r\nOfficials & Servant are now Helpless!\r\nGame Over!")
+        alert("Officals got annoyed, Its an Unhappy Journey\r\nOfficials & Servant are now Helpless!\r\nGame Over!\r\n" + "Moves Taken by you are: " + movesTaken)
 
         window.location.reload(true)
         document.getElementById("c").disabled = true;
         document.getElementById("l").disabled = true;
     } else if (d != 0 && c > d) {
-        alert("Officals got annoyed, Its an Unhappy Journey\r\nOfficials & Servant are now Helpless!\r\nGame Over!")
+        alert("Officals got annoyed, Its an Unhappy Journey\r\nOfficials & Servant are now Helpless!\r\nGame Over!\r\n" + "Moves Taken by you are: " + movesTaken)
 
         window.location.reload(true)
         document.getElementById("c").disabled = true;
         document.getElementById("l").disabled = true;
     } else if (c == 3 && d == 3) {
         if (movesTaken == 11) {
-            alert("Congratulations!\r\nYou've played the game Safely & Smartly\r\nHappy Journey & Thanks for Playing the game")
+            alert("Congratulations!\r\nYou've played the game Safely & Smartly\r\nHappy Journey & Thanks for Playing the game\r\n" + "Moves Taken by you are: " + movesTaken)
             alert("For more, You can reach out to nehemiah2015s@gmail.com")
             window.location.reload(true)
         } else if (movesTaken > 11) {
-            alert("Great!\r\nYou played the game Safely & you completed it but used more number of moves\r\nBe Smart & Be Safe\r\nHappy Journey!")
+            alert("Great!\r\nYou played the game Safely & you completed it but used more number of moves\r\nBe Smart & Be Safe\r\nHappy Journey!\r\n" + "Moves Taken by you are: " + movesTaken)
+            window.location.reload(true)
         } else if (movesTaken < 11) {
-            alert("Kudos to you!\r\nYou are Super Smart & Amazing\r\nYou've completed the game in most Optimised way\r\nEven, the admin is not able to find such an optimized approach\r\nCan you reach/mail at nehemiah2015s@gmail.com\r\nHe has a surprise for you, He is willing to buy a Coffee for you\r\nSee you Soon!")
+            alert("Kudos to you!\r\nYou are Super Smart & Amazing\r\nYou've completed the game in most Optimised way\r\nEven, the admin is not able to find such an optimized approach\r\nCan you reach/mail at nehemiah2015s@gmail.com\r\nHe has a surprise for you, He is willing to buy a Coffee for you\r\nSee you Soon!\r\n" + "Moves Taken by you are: " + movesTaken)
+            window.location.reload(true)
         }
     }
 }
@@ -131,7 +145,7 @@ function toLobby(data) {
     var userPickedLuggageAtCab = parseInt(document.getElementById("il2").value);
 
     //     General check on the user inputs
-    if (userPickedOfficialsAtCab != 0 && userPickedOfficialsAtCab != 1 && userPickedOfficialsAtCab != 2 ) {
+    if (userPickedOfficialsAtCab != 0 && userPickedOfficialsAtCab != 1 && userPickedOfficialsAtCab != 2) {
         document.getElementById("warning").innerHTML = "Please make the choice as per the Game rules";
         document.getElementById("suggestions").innerHTML = "Enter 0 for Blank field, if any";
 
@@ -140,7 +154,7 @@ function toLobby(data) {
             document.getElementById("suggestions").innerHTML = "";
         }, 5000)
     } else if (userPickedLuggageAtCab != 0 && userPickedLuggageAtCab != 1 && userPickedLuggageAtCab != 2) {
-        
+
         document.getElementById("warning").innerHTML = "Please make the choice as per the Game rules";
         document.getElementById("suggestions").innerHTML = "Enter 0 for Blank field, if any";
 
@@ -197,6 +211,14 @@ function toLobby(data) {
         document.getElementById("c").disabled = false;
         document.getElementById("l").disabled = true;
         movesTaken++;
+
+        document.getElementById("counting").innerHTML = movesTaken;
+
+
+        if (document.getElementById("l").disabled) {
+            document.getElementById("c").style.display = 'inline';
+            document.getElementById("l").style.display = 'none';
+        }
         //         clearing the user inputs after the action performed
 
         data.rightOI.value = "";
@@ -212,14 +234,14 @@ function toLobby(data) {
     //     a check on the balance of rules of the game
 
     if (b != 0 && a > b) {
-        alert("Officals got annoyed, Its an Unhappy Journey\r\nOfficials & Servant are now Helpless!\r\nGame Over!")
+        alert("Officals got annoyed, Its an Unhappy Journey\r\nOfficials & Servant are now Helpless!\r\nGame Over!\r\n" + "Moves Taken by you are " + movesTaken)
 
         window.location.reload(true)
         document.getElementById("c").disabled = true;
         document.getElementById("l").disabled = true;
     }
     if (d != 0 && c > d) {
-        alert("Officals got annoyed, Its an Unhappy Journey\r\nOfficials & Servant are now Helpless!\r\nGame Over!")
+        alert("Officals got annoyed, Its an Unhappy Journey\r\nOfficials & Servant are now Helpless!\r\nGame Over!\r\n" + "Moves Taken by you are " + movesTaken)
 
         window.location.reload(true)
         document.getElementById("c").disabled = true;
@@ -242,11 +264,14 @@ function startOf() {
         document.getElementById("il2").disabled = true;
         document.getElementById("c").disabled = false;
         document.getElementById("l").disabled = true;
-        
-    setTimeout(() => {
-        alert("You are out of Time, Game will be restarted automatically\r\nYou Lost the Game\r\nGame Over!")
-        window.location.reload(true)
-    }, 120000)
+
+        setTimeout(() => {
+            alert("You are out of Time, Game will be restarted automatically\r\nYou Lost the Game\r\nGame Over!" + "Moves Taken by you are " + movesTaken)
+            window.location.reload(true)
+        }, 120000)
+    }
+    if (!document.getElementById("c").disabled) {
+        document.getElementById("l").style.display = 'none';
     }
     if (time < 120) {
         document.getElementById("warning").innerHTML = "You've Already Started the Game, Please Play the Game";
