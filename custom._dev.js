@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  console.log("hiihhihi25");
   var firstSet = {
     London: 56236,
     Paris: 5851,
@@ -480,54 +479,55 @@ $(document).ready(function () {
         .text()
         .split("%")[0];
       function valueLoader() {
-        $(".response-rate-slider").slider({
-          min: 0,
-          max: 100,
-          value: valuation,
-          slide: function (event, ui) {
-            $(".response-rate-slider").css({
-              background: `linear-gradient(to right, #273992 ${ui.value}%, #ffffff 0%, #ffffff 100%)`,
-            });
-            $(".response-value").text(`${ui.value}%`);
-          },
-        });
-        $(".completion-rate-slider").slider({
-          min: 0,
-          max: 100,
-          value: valuation1,
-          slide: function (event, ui) {
-            $(".completion-rate-slider").css({
-              background: `linear-gradient(to right, #273992 ${ui.value}%, #ffffff 0%, #ffffff 100%)`,
-            });
-            $(".completion-response-value").text(`${ui.value}%`);
-          },
-        });
-        $(".response-rate-slider").css({
-          background: `linear-gradient(to right, #273992 ${valuation}%, #ffffff 0%, #ffffff 100%)`,
-        });
-        $(".response-value").text(`${valuation}%`);
-        $(".completion-rate-slider").css({
-          background: `linear-gradient(to right, #273992 ${valuation1}%, #ffffff 0%, #ffffff 100%)`,
-        });
-        $(".completion-response-value").text(`${valuation1}%`);
-        if (Number($(".response-rate-slider").slider("value")) <= 4) {
-          $(".response-rate-slider .ui-slider-handle").addClass(
-            "slider-remover"
-          );
-        } else {
-          $(".response-rate-slider .ui-slider-handle").removeClass(
-            "slider-remover"
-          );
-        }
-        if (Number($(".completion-rate-slider").slider("value")) <= 4) {
-          $(".completion-rate-slider .ui-slider-handle").addClass(
-            "slider-remover"
-          );
-        } else {
-          $(".completion-rate-slider .ui-slider-handle").removeClass(
-            "slider-remover"
-          );
-        }
+        console.log("hiihhihi25");
+        // $(".response-rate-slider").slider({
+        //   min: 0,
+        //   max: 100,
+        //   value: valuation,
+        //   slide: function (event, ui) {
+        //     $(".response-rate-slider").css({
+        //       background: `linear-gradient(to right, #273992 ${ui.value}%, #ffffff 0%, #ffffff 100%)`,
+        //     });
+        //     $(".response-value").text(`${ui.value}%`);
+        //   },
+        // });
+        // $(".completion-rate-slider").slider({
+        //   min: 0,
+        //   max: 100,
+        //   value: valuation1,
+        //   slide: function (event, ui) {
+        //     $(".completion-rate-slider").css({
+        //       background: `linear-gradient(to right, #273992 ${ui.value}%, #ffffff 0%, #ffffff 100%)`,
+        //     });
+        //     $(".completion-response-value").text(`${ui.value}%`);
+        //   },
+        // });
+        // $(".response-rate-slider").css({
+        //   background: `linear-gradient(to right, #273992 ${valuation}%, #ffffff 0%, #ffffff 100%)`,
+        // });
+        // $(".response-value").text(`${valuation}%`);
+        // $(".completion-rate-slider").css({
+        //   background: `linear-gradient(to right, #273992 ${valuation1}%, #ffffff 0%, #ffffff 100%)`,
+        // });
+        // $(".completion-response-value").text(`${valuation1}%`);
+        // if (Number($(".response-rate-slider").slider("value")) <= 4) {
+        //   $(".response-rate-slider .ui-slider-handle").addClass(
+        //     "slider-remover"
+        //   );
+        // } else {
+        //   $(".response-rate-slider .ui-slider-handle").removeClass(
+        //     "slider-remover"
+        //   );
+        // }
+        // if (Number($(".completion-rate-slider").slider("value")) <= 4) {
+        //   $(".completion-rate-slider .ui-slider-handle").addClass(
+        //     "slider-remover"
+        //   );
+        // } else {
+        //   $(".completion-rate-slider .ui-slider-handle").removeClass(
+        //     "slider-remover"
+        //   );
+        // }
       }
       valueLoader();
     } else {
