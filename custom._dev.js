@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  console.log("hihihihsiaifh")
   var firstSet = {
     London: 56236,
     Paris: 5851,
